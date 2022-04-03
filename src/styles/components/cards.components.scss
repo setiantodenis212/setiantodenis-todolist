@@ -1,0 +1,96 @@
+.activity-card-todo {
+  background-color: white;
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  display: flex;
+  height: 234px;
+  padding: 0 26px;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .activity-card-todo__body {
+    padding-top: 22px;
+    cursor: pointer;
+    min-height: calc(234px - 80px);
+    .activity-card-todo__title {
+      color: v.$text-dark;
+      font-weight: bold;
+      font-size: 18px;
+      line-clamp: 5;
+      display: -webkit-box;
+      -webkit-line-clamp: 5;
+      -webkit-box-orient: vertical;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+  }
+
+  .activity-card-todo__action {
+    padding-bottom: 22px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+
+    .activity-card-todo__date {
+      font-size: 14px;
+      color: v.$text-dark05;
+      cursor: initial;
+    }
+  }
+}
+
+.list-card-todo {
+  padding: 27px 28px;
+  background-color: white;
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 10px;
+
+  .list-card-todo__content {
+    display: flex;
+
+    .list-card-todo__checkbox {
+      display: flex;
+      align-items: center;
+      height: 27px;
+    }
+
+    .list-card-todo__indicator {
+      height: 27px;
+      display: flex;
+      align-items: center;
+      margin-left: 22px;
+
+      .todo-indicator {
+        width: 9px;
+        height: 9px;
+      }
+    }
+
+    .list-card-todo__title {
+      margin: 0 16px;
+      font-weight: 500;
+      line-height: 27px;
+      font-size: 18px;
+      max-width: 85%;
+
+      &.active {
+        text-decoration-line: line-through;
+        color: #888888;
+      }
+    }
+
+    .list-card-todo__edit {
+      display: flex;
+      align-items: center;
+      height: 27px;
+    }
+  }
+  .list-card-todo__action {
+    height: 27px;
+  }
+}

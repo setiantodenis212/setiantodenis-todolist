@@ -1,0 +1,57 @@
+.todo-add-btn {
+  width: 159px;
+  height: 54px;
+  background: v.$primary;
+  border-radius: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  // transition: opacity 0.2s ease-in-out;
+
+  img {
+    margin-right: 11px;
+  }
+
+  .todo-add-btn__title {
+    font-size: 18px;
+    color: white;
+    font-weight: 600;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+  }
+}
+
+.todo-save-btn {
+  width: 150px;
+  height: 54px;
+  background: v.$primary;
+  border-radius: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  // transition: opacity 0.2s ease-in-out;
+
+  .todo-save-btn__title {
+    font-size: 18px;
+    color: white;
+    font-weight: 600;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+  }
+}

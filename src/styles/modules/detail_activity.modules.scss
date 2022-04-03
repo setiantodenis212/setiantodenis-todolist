@@ -1,0 +1,60 @@
+@use "../../styles/variables" as v;
+
+.todo-detail {
+  .todo-detail__header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 49px 0;
+    .todo-detail__navigator {
+      padding: 0 !important;
+      display: flex;
+      align-items: flex-start;
+      button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 54px;
+      }
+
+      .todo-detail__title-edit {
+        font-size: 36px;
+        border: 0;
+        background-color: transparent;
+        outline: 0 !important;
+        font-weight: bold;
+        border-bottom: 2px solid transparent;
+        margin-left: 19px !important;
+        margin-right: 23px !important;
+
+        &:focus {
+          border-bottom: 2px solid v.$text-dark;
+        }
+      }
+
+      .todo-detail__title {
+        line-height: 54px;
+        font-weight: bold;
+        margin-left: 19px !important;
+        margin-right: 23px !important;
+        margin-top: 0;
+        border-bottom: 2px solid transparent;
+      }
+    }
+    .todo-detail__action {
+      display: flex;
+      align-items: center;
+
+      .sort-todo-selector {
+        margin-right: 18px;
+      }
+    }
+  }
+
+  .todo-detail__content {
+    &.no-data {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}

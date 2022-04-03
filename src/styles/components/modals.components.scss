@@ -1,0 +1,109 @@
+.list-todo-add {
+  max-width: 830px !important;
+  margin: auto;
+
+  .modal-content {
+    width: 100%;
+    .modal-header {
+      padding: 24px 30px !important;
+
+      .modal-title {
+        width: 100%;
+
+        .list-todo-add__title-wrapper {
+          display: flex;
+          width: 100%;
+          justify-content: space-between;
+          align-items: center;
+
+          .list-todo-add__title {
+            font-size: 18px;
+            line-height: 27px;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+
+  .modal-body {
+    padding: 0 30px;
+    padding-top: 38px;
+    padding-bottom: 23px;
+
+    .outline-todo-input {
+      margin-bottom: 26px;
+    }
+  }
+
+  .modal-footer {
+    padding: 14px 30px;
+  }
+}
+
+.modal-todo-delete {
+  max-width: 490px !important;
+  .modal-body {
+    padding: 43px !important;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+
+    .modal-todo-delete__title {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 150%;
+      text-align: center;
+      padding-top: 34px;
+      padding-bottom: 46px;
+    }
+
+    .modal-todo-delete__action {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .modal-todo-delete__button {
+        width: 150px;
+        padding: 13.5px 0;
+        display: flex;
+        justify-content: center;
+        border-radius: 45px;
+
+        &.no {
+          background: #f4f4f4;
+          margin-right: 10px;
+        }
+        &.yes {
+          background: v.$danger;
+          color: white;
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+}
+
+.modal-todo-information {
+  max-width: 490px !important;
+
+  .modal-body {
+    display: flex;
+    padding: 19px 27px !important;
+    .modal-todo-information__section {
+      display: flex;
+      align-items: center;
+
+      .modal-todo-information__icon {
+        height: 24px;
+        width: 24px;
+      }
+      .modal-todo-information__title {
+        margin-left: 10px;
+        font-weight: 500;
+        line-height: 21px;
+      }
+    }
+  }
+}

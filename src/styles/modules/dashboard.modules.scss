@@ -1,0 +1,28 @@
+.todo-dashboard {
+  .todo-dashboard__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 49px 0;
+
+    .todo-dashboard__title {
+      line-height: 54px;
+      font-weight: bold;
+    }
+  }
+
+  .todo-dashboard__row {
+    display: flex;
+    flex-wrap: wrap;
+    width: calc(100% + 19px);
+    &.centered {
+      justify-content: center;
+    }
+
+    .todo-dashboard__row-item {
+      width: calc(1000px / 4.1);
+      padding-right: 10px;
+      margin-bottom: 10px;
+    }
+  }
+}
